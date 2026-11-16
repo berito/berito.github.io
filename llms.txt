@@ -1,0 +1,29 @@
+# Mohammed
+
+> Robotics engineer in SLAM, navigation and computer vision, building on ROS 2 with C++ and Python and measuring every result. Based in Ethiopia,
+> open to remote work.
+
+- Focus areas: computer vision and perception (detection, tracking and target estimation for robots); SLAM and state estimation (LiDAR-inertial
+  SLAM, pose-graph optimization, sensor fusion, 4+ years); robotics and robot learning (autonomous ground robots and drones in ROS 2 and simulation
+  with Nav2, PX4 and Gazebo).
+- Education: MSc in Artificial Intelligence at Addis Ababa University, in progress, with a thesis on robust pose-graph optimization; BSc in Computer
+  Engineering, Eritrean Institute of Technology.
+- Teaching: assistant lecturer in Electrical and Computer Engineering at Samara University since 2021; part-time robotics lecturer at Addis Ababa
+  University since 2026.
+- Freelance: robotics projects through Upwork.
+
+## Pages
+
+- [Home](https://berito.github.io/): overview, focus areas and how to work with me
+- [CV](https://berito.github.io/cv/): experience, projects, education and skills
+- [CV (PDF)](https://berito.github.io/assets/rendercv/rendercv_output/Mohammed_CV.pdf)
+- [Teaching](https://berito.github.io/teaching/): courses with topics and lab material
+- [Projects](https://berito.github.io/projects/)
+
+## Profiles
+
+- Email: mohammed.gsr-5161-16@aau.edu.et
+- [LinkedIn](https://www.linkedin.com/in/mohsraj)
+- [GitHub](https://github.com/berito)
+- [YouTube: LearnBotics](https://www.youtube.com/@LearnBotics)
+- [Upwork](https://www.upwork.com/freelancers/~01f6916f502dc2f83e)
