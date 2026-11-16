@@ -1,17 +1,20 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: What I built, how, and the result I measured.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 1
+display_categories: [computer vision, slam, robotics]
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
 <div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
+{% if site.projects.size == 0 %}
+<p class="coming-soon">Project write-ups are coming soon, starting with PX4 track pacing and Mengabot. Until then, their demos are on YouTube:
+<a href="https://www.youtube.com/watch?v=wvMxqPTPmhs">PX4 track pacing</a> and <a href="https://www.youtube.com/watch?v=wurXI_GgwnE">Mengabot</a>.</p>
+{% elsif site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">

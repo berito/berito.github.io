@@ -1,0 +1,237 @@
+/*******************************************************************************
+ * Site colours and fonts, matching the LearnBotics channel art
+ ******************************************************************************/
+
+$navy: #111f33;
+$navy-light: #1a2d47;
+$navy-dark: #0b1626;
+$orange: #f07000;
+$orange-bright: #ff8c2b;
+$orange-dark: #b84f00;
+$ink: #1b2533;
+$mist: #e6eaf0;
+$slate: #8a96a8;
+
+$heading-font: "Ubuntu", "Roboto", sans-serif;
+
+:root {
+  --global-bg-color: #ffffff;
+  --global-text-color: #{$ink};
+  --global-text-color-light: #5b6778;
+  --global-theme-color: #{$orange-dark};
+  --global-hover-color: #{$orange-dark};
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #{$navy};
+  --global-footer-text-color: #{$mist};
+  --global-footer-link-color: #{$orange-bright};
+  --global-code-bg-color: rgba(17, 31, 51, 0.05);
+  --global-card-bg-color: #ffffff;
+  --global-divider-color: rgba(17, 31, 51, 0.12);
+  --global-highlight-color: #{$orange-dark};
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #{$navy};
+  --global-text-color: #{$mist};
+  --global-text-color-light: #{$slate};
+  --global-theme-color: #{$orange-bright};
+  --global-hover-color: #{$orange-bright};
+  --global-hover-text-color: #{$navy};
+  --global-footer-bg-color: #{$navy-dark};
+  --global-footer-text-color: #{$slate};
+  --global-footer-link-color: #{$orange-bright};
+  --global-code-bg-color: #{$navy-light};
+  --global-card-bg-color: #{$navy-light};
+  --global-divider-color: rgba(230, 234, 240, 0.12);
+  --global-highlight-color: #{$orange-bright};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.post-title {
+  font-family: $heading-font;
+}
+
+.post-header .desc {
+  font-family: $heading-font;
+  font-size: 1.1rem;
+  color: var(--global-theme-color);
+}
+
+// Home page profile sidebar
+$sidebar-width: 240px;
+
+.profile {
+  width: $sidebar-width;
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+}
+
+.profile img {
+  max-width: 180px;
+}
+
+.profile img.rounded-circle {
+  padding: 4px;
+  border: 1.5px solid var(--global-theme-color);
+}
+
+@media (max-width: 767.98px) {
+  .profile.float-left {
+    width: 100%;
+    margin: 0 0 1.5rem;
+    text-align: center;
+  }
+
+  .profile-details {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile.float-left {
+    float: left !important;
+    width: $sidebar-width;
+    margin: 0 2rem 1rem 0;
+  }
+
+  .profile.float-left + .clearfix {
+    margin-left: calc(#{$sidebar-width} + 2rem);
+  }
+}
+
+.profile .more-info {
+  font-family: inherit;
+}
+
+.profile-name {
+  margin: 1rem 0 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.profile-role {
+  margin: 0;
+  font-family: $heading-font;
+  font-size: 0.9rem;
+  line-height: 1.45;
+
+  span {
+    display: block;
+    color: var(--global-text-color-light);
+  }
+
+  span:first-child {
+    margin-bottom: 0.15rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--global-theme-color);
+  }
+}
+
+.profile-details {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.4rem 0;
+    color: var(--global-text-color-light);
+  }
+
+  i {
+    width: 1.1rem;
+    text-align: center;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.profile-details .divider {
+  margin-top: 0.9rem;
+}
+
+// Home page sections
+.profile + .clearfix h2 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.focus-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.focus-area {
+  padding: 1rem 1.1rem;
+  border-top: 3px solid $orange;
+  border-bottom: 3px solid $orange;
+  border-radius: 0.375rem;
+  background-color: var(--global-card-bg-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+
+  h3 {
+    font-size: 1.05rem;
+    margin: 0 0 0.4rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+// "Coming soon" note on pages with no entries yet
+.coming-soon {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid $orange;
+  background-color: var(--global-code-bg-color);
+  border-radius: 0.25rem;
+}
+
+// Writing page header, styled like the other page titles
+.header-bar {
+  padding: 0;
+  border-bottom: none;
+  text-align: left;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--global-text-color);
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+}
